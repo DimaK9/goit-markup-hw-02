@@ -8,21 +8,25 @@
 body {
     font-family: var(--main-font);
     letter-spacing: 0.03em;
-    font-style: normal;
+    font-size: 14px;
 }
 .list {
     list-style: none;
     text-decoration: none;
 }
 .link-logo {
-    color: var(--acent-color);
-    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
+    color: var(--acent-color);
 }
 .logo-color {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
     color: #000000;
 }
 .nav-link, 
@@ -37,6 +41,9 @@ body {
 .link-tel {
     color: var(--secondary-text-color);
 }
+.link-mail {
+    color: var(--acent-color);
+}
 .nav-link:hover,
 .nav-link:focus,
 .link-mail:hover,
@@ -48,45 +55,31 @@ body {
 .main-section {
 background-color: var(--hero-and-footer-background-color); 
 text-align: center;
-width: 1600px;
-height: 600px;
 }
 .main-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: #ffffff;
-    position: absolute;
 }
 .btn-large {
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     letter-spacing: 0.06em;
     color: #ffffff;
     cursor: pointer;
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
     background-color: var(--acent-color);
 }
 .title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-text-color);
 }
 .text {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
@@ -106,7 +99,6 @@ height: 600px;
     color: var(--main-text-color);
 }
 .profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -121,18 +113,17 @@ height: 600px;
     color: var(--main-text-color);
 }
 .text-portfolio {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.88px;
+    line-height: 1.88;
     color: var(--secondary-text-color);
 }
 .btn-portfolio {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     cursor: pointer;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     color: #212121;
 }
 .btn-portfolio:hover,
@@ -150,11 +141,15 @@ height: 252px;
     color: #ffffff;
 }
 .footer-mail,
-.address,
 .footer-tel {
-    font-weight: 400;
-    font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address {
+    color: #ffffff;
+    font-style: normal;
+    line-height: 1.71;
     text-decoration: none;
 }
