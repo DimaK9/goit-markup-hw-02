@@ -38,11 +38,11 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-.link-tel {
-    color: var(--secondary-text-color);
-}
-.link-mail {
+.nav-link.active {
     color: var(--acent-color);
+}
+.link-tel,.link-mail {
+    color: var(--secondary-text-color);
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -51,6 +51,9 @@ body {
 .link-tel:hover,
 .link-tel:focus {
     color: var(--acent-color);
+}
+.nav-link:active {
+    color: red;
 }
 .main-section {
 background-color: var(--hero-and-footer-background-color); 
@@ -62,6 +65,7 @@ text-align: center;
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: #ffffff;
+    text-transform: uppercase;
 }
 .btn-large {
     font-family: inherit;
@@ -75,6 +79,7 @@ text-align: center;
 }
 .title {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--main-text-color);
@@ -134,8 +139,6 @@ color: #ffffff;
 /* footer */
 .footer {
 background-color: var(--hero-and-footer-background-color);
-width: 1600px;
-height: 252px;
 }
 .footer-logo-color {
     color: #ffffff;
@@ -147,9 +150,16 @@ height: 252px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
-.address {
+.footer-address {
     color: #ffffff;
     font-style: normal;
     line-height: 1.71;
     text-decoration: none;
 }
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--acent-color);
+}
+
